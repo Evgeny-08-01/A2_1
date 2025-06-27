@@ -28,9 +28,6 @@ func (ds *DaySteps) Parse(datastring string) (err error) {
 		err := errors.New("incorrect data entry")
 		return err
 	}
-	//if strings.TrimSpace(dataInput[0])==""||strings.TrimSpace(dataInput[1])==""{
-	//	return errors.New("incorrect data entry")
-	//}
 	stepsNumbers, err := strconv.Atoi(dataInput[0])
 	if err != nil {
 		return err

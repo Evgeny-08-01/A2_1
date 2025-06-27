@@ -28,9 +28,7 @@ func (t *Training) Parse(datastring string) (err error) {
 		//log.Println(err)
 		return err
 	}
-	if strings.TrimSpace(dataInput[0])==""||strings.TrimSpace(dataInput[1])==""||strings.TrimSpace(dataInput[2])==""{
-		return errors.New("incorrect data entry")
-	}
+		
 	stepsNumbers, err := strconv.Atoi(dataInput[0])
 	if err != nil {
 		//	log.Println(err)
